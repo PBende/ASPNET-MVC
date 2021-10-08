@@ -45,10 +45,9 @@ namespace ASPNETIdentity
             // This is similar to the RememberMe option when you log in.
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
-            // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+            app.UseMicrosoftAccountAuthentication(
+                clientId: "skdjfklsdjfklsdjfksjfdsjflksdjfksdf",
+                clientSecret: "s;ldfjklsdjfiewifjklsdjflksdjflksdjflskdjfsdlkjf");
 
             //app.UseTwitterAuthentication(
             //   consumerKey: "",
@@ -58,11 +57,11 @@ namespace ASPNETIdentity
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = ".apps.googleusercontent.com",
+                ClientSecret = "kljkljkj-f0Ebb_J1xvLvnMW"
+            });
         }
     }
 }

@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using ASPNETIdentity.Models;
+using System.Net.Mail;
 
 namespace ASPNETIdentity
 {
@@ -18,6 +19,7 @@ namespace ASPNETIdentity
     {
         public Task SendAsync(IdentityMessage message)
         {
+            // MailMessage
             // Plug in your email service here to send an email.
             return Task.FromResult(0);
         }
@@ -58,6 +60,7 @@ namespace ASPNETIdentity
                 RequireDigit = true,
                 RequireLowercase = true,
                 RequireUppercase = true,
+                
             };
 
             // Configure user lockout defaults
