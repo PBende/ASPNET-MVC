@@ -156,6 +156,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\ArrowRight.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -217,6 +218,7 @@
     <Content Include="Views\SAssets\Edit.cshtml" />
     <Content Include="Views\SAssets\Index.cshtml" />
     <Content Include="Views\Assets\Create.cshtml" />
+    <Content Include="Views\Shared\Common.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

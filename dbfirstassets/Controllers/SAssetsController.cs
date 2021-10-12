@@ -32,7 +32,9 @@ namespace dbfirstassets.Controllers
             {
                 return HttpNotFound();
             }
-            return View(asset);
+            System.Threading.Thread.Sleep(5000);
+
+            return PartialView(asset);
         }
 
         // GET: SAssets/Create
